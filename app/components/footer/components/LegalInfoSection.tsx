@@ -17,7 +17,9 @@ const LegalInfoSection = () => {
       <Logo />
       <div className="ml-4 flex flex-1 gap-4 text-sm">
         {links.map((link) => (
-          <a href="#">{link}</a>
+          <a href="#" key={link}>
+            {link}
+          </a>
         ))}
       </div>
       <div>
