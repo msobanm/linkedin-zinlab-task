@@ -3,7 +3,8 @@
 import React, { useRef } from "react"
 import Card from "./Card"
 import ArrowButton from "../../components/ArrowButton"
-import { cardsData } from "@/utils/cardsData"
+import { fromPdfData } from "@/utils/cardsData"
+import SectionContainer from "./SectionContainer"
 
 const ConvertFromPDFSection = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null)
@@ -38,26 +39,19 @@ const ConvertFromPDFSection = () => {
   }
 
   return (
-    <section className="py-12">
-      <div className="container mx-auto px-6  relative">
-        <h2 className="text-3xl font-bold mb-6">Convert From PDF</h2>
-
-        <div
-          ref={scrollContainerRef}
-          className="flex py-6 px-4 gap-10 overflow-x-scroll no-scrollbar transition-transform duration-500"
-          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-        >
-          {cardsData.map((card, index) => (
-            <Card key={index} {...card} />
-          ))}
-        </div>
-        <ArrowButton isLeft={true} handleScroll={() => handleScroll("left")} />
-        <ArrowButton
-          isLeft={false}
-          handleScroll={() => handleScroll("right")}
-        />
+    <SectionContainer title="Convert from PDF">
+      <div
+        ref={scrollContainerRef}
+        className="flex py-6 px-4 gap-10 overflow-x-scroll no-scrollbar transition-transform duration-500"
+        style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+      >
+        {fromPdfData.map((card, index) => (
+          <Card key={index} {...card} />
+        ))}
       </div>
-    </section>
+      <ArrowButton isLeft={true} handleScroll={() => handleScroll("left")} />
+      <ArrowButton isLeft={false} handleScroll={() => handleScroll("right")} />
+    </SectionContainer>
   )
 }
 

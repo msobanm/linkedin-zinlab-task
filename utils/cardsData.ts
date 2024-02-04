@@ -1,8 +1,8 @@
-export const cardsData = [
+export const fromPdfData = [
   {
     icon: "https://images.hipdf.com/images2022/icons/pdf-word.svg",
     name: "PDF to Word",
-    description: "Easily convert PDF to",
+    description: "Easily convert PDF to Word",
   },
   {
     icon: "https://images.hipdf.com/images2022/icons/PDF-PPT.svg",
@@ -38,5 +38,33 @@ export const cardsData = [
     icon: "https://images.hipdf.com/images2022/icons/pdf-html.svg",
     name: "PDF to HTML",
     description: "Easily convert PDF to HTML",
+  },
+]
+
+export const toPdfData = [
+  {
+    icon: "https://images.hipdf.com/images2022/icons/pdf-word.svg",
+    name: "Word to PDF",
+    description: "Easily convert Word to PDF",
+  },
+  {
+    icon: "https://images.hipdf.com/images2022/icons/PDF-PPT.svg",
+    name: "PPT to PDF",
+    description: "Easily convert PPT to PPF",
+  },
+  {
+    icon: "https://images.hipdf.com/images2022/icons/pdf-excel.svg",
+    name: "Excel to PDF",
+    description: "Easily convert Excel to PDF",
+  },
+  {
+    icon: "https://images.hipdf.com/images2022/icons/PDF-JPG.svg",
+    name: "JPG to PDF",
+    description: "Easily convert JPG to PDF",
+  },
+  {
+    icon: "https://images.hipdf.com/images2022/icons/PDF-TXT.svg",
+    name: "TXT to PDF",
+    description: "Easily convert TXT to PDF",
   },
 ]
