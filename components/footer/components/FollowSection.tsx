@@ -1,7 +1,7 @@
 import React from "react"
-import youtubeIcon from "../../../../public/youtube.svg"
-import twitterIcon from "../../../../public/twitter.svg"
-import facebookIcon from "../../../../public/facebook.svg"
+import youtubeIcon from "../../../public/youtube.svg"
+import twitterIcon from "../../../public/twitter.svg"
+import facebookIcon from "../../../public/facebook.svg"
 import SocialMediaIcon from "../../SocialMediaIcon"
 
 const FollowSection = () => {

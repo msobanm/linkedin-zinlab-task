@@ -1,7 +1,7 @@
 import Image from "next/image"
 import React from "react"
-import leftArrowIcon from "../../public/arrow-left.svg"
-import rightArrowIcon from "../../public/arrow-right.svg"
+import leftArrowIcon from "../public/arrow-left.svg"
+import rightArrowIcon from "../public/arrow-right.svg"
 
 type Props = {
   isLeft: boolean

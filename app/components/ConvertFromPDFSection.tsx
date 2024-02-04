@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react"
 import Card from "./Card"
-import ArrowButton from "../../ArrowButton"
+import ArrowButton from "../../components/ArrowButton"
 
 const cardsData = [
   {

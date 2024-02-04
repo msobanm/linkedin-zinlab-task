@@ -10,9 +10,11 @@ const Search = () => {
         className="flex-1 border-none outline-none p-2 bg-transparent"
       />
       <Image
-        src="https://cdn3.iconfinder.com/data/icons/feather-5/24/search-512.png"
+        src="/img/search.jpg"
         alt="Search Icon"
-        className="w-5 h-5 mx-4 cursor-pointer"
+        className="mx-2 cursor-pointer"
+        width={25}
+        height={25}
       />
     </div>
   )
